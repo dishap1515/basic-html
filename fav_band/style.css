@@ -1,0 +1,56 @@
+* {
+    box-shadow: border-bow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkslategray;
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-mav ul {
+    margin: 0;
+}
+
+.main-mav li {
+    display: inline;
+}
+
+.main-mav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+.main-mav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba("255, 255, 255, 3");
+}
+
+.main-mav {
+    padding: 0 5%;
+}
+.main-mav a:hover {
+    background-color: rgba(255, 255, 255, 5);
+}
+
+
+.main-header {
+    
+    background-image: url("imbackground.png");
+    background-size: cover;
+    padding-bottom: 10px;    
+    
+}
+.band-name {
+    text align: centre;
+    margin: 0;
+    fony: size 4em;
+    font-family: 
+}
