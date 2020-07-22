@@ -121,3 +121,26 @@ body {
     padding-bottom: 0.3em;
     padding-top: 0.3em;
 }
+
+.bg-contact {
+    background-color: skyblue;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+  
