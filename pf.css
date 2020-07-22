@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    box-shadow: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: darkslategray;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0em;
+    color: black;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: normal;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.7);
+
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main-body {
+    
+    background-image: url("images/bgp.jpeg");
+    background-blend-mode: multiply;
+    background-size: 88em;
+}
+
+.about-profile-img {
+    
+    height: 245px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 75%;
+    margin-top: 15em;
+    margin-left: 52em;
+
+}
+
+.my-name {
+    text-align: center;
+    margin-top: 0.1em;
+    font-size: 4em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
