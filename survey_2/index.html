@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+        <title>Random Survey</title>
+        <link rel="stylesheet" href="survey2.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Random Survey</h1>
+        </header>
+        <div class="container"> 
+            <form class="form">
+                <div class="label">
+                    <label>Name</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="label">
+                    <label>Age</label>
+                    <input type="text" name="Age">
+                </div>
+                <div class="label">
+                    <label>Gender</label>
+                    <select id="dropdown" name="Gender" required>
+                        
+                        <option value="job">FEMALE</option>
+                        <option value="learner">MALE</option>
+                        <option value="other">OTHERS</option>
+                    </select>
+                </div>
+                <div class="label">
+                    <p class="p">Do you use Facebook?</p>
+                    <input type="radio" id="yes" name="Facebook?" value="yes">
+                    <label for="male">YES</label>
+                    <input type="radio" id="no" name="Facebook?" value="no">
+                    <label for="female">NO</label>
+                   
+                </div>
+                
+                <button class="btn" type="reset">Reset</button>
+                <button class="btn" type="submit">Submit</button>
+
+                
+            </form>
+        </div>    
+    </body>
+</html>

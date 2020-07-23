@@ -1,0 +1,39 @@
+.header {
+    font-weight: normal;
+    font-size: 1.5em;
+    background-color: lightcoral;
+    padding-top: 1.5em;
+    padding-left: 0.5em;
+    
+   
+}
+
+.container {
+    margin-top: 1px;
+    margin-left: 30em;
+    margin-right: 30em;
+    background-color: lightslategray;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.form {
+    padding-top: 2em;
+}
+
+.label{
+    
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.7rem;
+  
+}
+
+.btn {
+    margin-right: 1em;
+    margin-top: 1rem;
+}
+
+.p {
+    padding-top: 1em;
+}
