@@ -13,15 +13,15 @@
         </header>
         <div class="container"> 
             <form class="form">
-                <div class="label">
+                <div class="label best">
                     <label>Name</label>
                     <input type="text" name="name">
                 </div>
-                <div class="label">
+                <div class="label best">
                     <label>Age</label>
                     <input type="text" name="Age">
                 </div>
-                <div class="label">
+                <div class="label best">
                     <label>Gender</label>
                     <select id="dropdown" name="Gender" required>
                         
@@ -36,12 +36,48 @@
                     <label for="male">YES</label>
                     <input type="radio" id="no" name="Facebook?" value="no">
                     <label for="female">NO</label>
-                   
+                </div>
+                <div class="label">
+                    <p class="p">Do you use Instagram?</p>
+                    <input type="radio" id="yes" name="Instagram?" value="yes">
+                    <label for="male">YES</label>
+                    <input type="radio" id="no" name="Instagram?" value="no">
+                    <label for="female">NO</label>
+                </div>
+
+                <div class="label">
+                    <p class="p">Do you use Twitter?</p>
+                    <input type="radio" id="yes" name="Twitter?" value="yes">
+                    <label for="male">YES</label>
+                    <input type="radio" id="no" name="Twitter?" value="no">
+                    <label for="female">NO</label>
+                </div>
+
+                <div class="label best">
+                    <label>Which one of these you find the best?</label>
+                    <select id="dropdown" name="best?" required>
+                        <option disabled selected value>select</option>
+                        <option value="job">FACEBOOK</option>
+                        <option value="learner">INSTAGRAM</option>
+                        <option value="other">TWITTER</option>
+                    </select>
+                </div>
+
+                <div class="label best">
+                    <label class="section-header">Want to request an Update?</label>
+                    <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Enter your suggestion here... "
+                    ></textarea>
                 </div>
                 
-                <button class="btn" type="reset">Reset</button>
-                <button class="btn" type="submit">Submit</button>
 
+                <div class="label best">
+                <button class="btn best" type="reset">Reset</button>
+                <button class="btn best" type="submit">Submit</button>
+                </div>
                 
             </form>
         </div>    

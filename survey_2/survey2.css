@@ -25,7 +25,7 @@
     
     align-items: center;
     font-size: 1.125rem;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
   
 }
 
@@ -37,3 +37,15 @@
 .p {
     padding-top: 1em;
 }
+
+.best {
+    margin-top: 1.5em;
+}
+
+.input-textarea {
+    min-height: 65px;
+    width: 30%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+  
