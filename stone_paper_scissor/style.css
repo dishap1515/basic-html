@@ -25,3 +25,98 @@ header h1{
     padding: 20px;
     background-color: #2C3E50;
 }
+.score-container {
+    position: relative;
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+    color: white;
+}
+#score{
+    
+    position: absolute;
+    
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+}
+.user{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e14a67;
+    width: 40px;
+    height: 15px;
+    font-size: 10px;
+    padding: 2px 10px;
+    box-sizing: border-box;
+
+}
+.com{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    background-color: #e14a67;
+    width: 40px;
+    height: 15px;
+    font-size: 10px;
+    padding: 2px 10px;
+    box-sizing: border-box;
+
+}
+.buttons{
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bn{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border: 3px solid #34495e;
+    border-radius: 50%;
+    color: #34495e;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transform: .35%;
+}
+.bn:hover{
+    background-color: #34495e;
+    border-color: white;
+    color: white;
+}
+.challenge {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    width: 540px;
+    height: 40%;
+    display: inline-flex;
+}
+#you{
+    position: relative;
+    width: 37.5%;
+    font-size: 50px;
+}
+#com{
+    padding-left: 0.5em;
+    position: relative;
+    width: 37.5%;
+    font-size: 50px;
+}
+.who{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50px);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}

@@ -15,10 +15,25 @@
                 <span class="com">COM</span>
             </div>
             <div class="buttons">
-                <button class="bn" onclick="value">Paper</button>
-                <button class="bn" onclick="value">Stone</button>
-                <button class="bn" onclick="value">Scissor</button>
+                <button class="bn" onclick="game(this.value)" value="Paper">Paper<i class="far paper"></i></button>
+                <button class="bn" onclick="game(this.value)" value="Stone">Stone<i class="far stone"></i></button>
+                <button class="bn" onclick="game(this.value)" value="Scissor">Scissor<i class="far scissor"></i></button>
             </div>
-        </div>    
+            <div id="challenge">
+                <div id="you">
+                    <div id="YourObject"></div>
+                    
+               
+                
+                    <div class="who">You win!</div>
+                </div>
+                <div id="com">
+                    <div id="ComObject"></div>
+                    <div class="who">lose</div>
+                    
+                </div>
+            </div>
+            </div> 
+        <script type=" text/javascript" srr="main.js"></script>   
     </body>
 </html>
