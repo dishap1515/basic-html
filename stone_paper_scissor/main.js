@@ -1,25 +1,62 @@
-var choices = ["paper", "rock", "scissors"];
-var i = Math.floor(Math.random() * 3);
-var ComputerChoice = choices[i];
-var UserPoints = 0;
-var ComputerPoints = 0;
-function score(){
-    var score_div = document.getElementById("score").innerHTML = UserPoints + " - " + CompPoints;
+var userChoice = prompt("Do you choose rock, paper or scissors?");
 
-}
-setInterval(score,50);
-function convert(word){
-    if(word === "paper") return '<i class="far paper"></i>';
-    if(word === "stone") return '<i class="far stone"></i>';
-    return '<i class="far'
-    if(word === "scissor") return <i class="far scissor"></i>
-}
-function game(UserChoice) {
-    var box = document.getElementById("challenge");
-    box.style.display = "inline-flex";
-    var userDiv = document.getElementById("YourObject");
-    userDiv.innerHTML = convert(UserChoice);
-    var comDiv = document.getElementById("YourObject");
-    comDiv.innerHTML = convert(comChoice)
-    if(UserChoice === "paper" && ComChoices === "stone"|| UserChoice === "paper" && ComChoices === "stone"|| UserChoice === "scissor" 
-}
+        if (! userChoice) {
+            // User choice was undefined
+            document.write("<p>Player 1, you cheated! Refresh this screen and fight like a man.</p>");
+        } else {
+            // Display user choice
+            document.write("<p>Player 1:" + " " + userChoice + "</p>");
+        }
+
+        // Computer choice
+        var computerChoice = Math.random();
+        if (computerChoice < 0.34) {
+            computerChoice = "rock";
+        } else if(computerChoice <= 0.67) {
+            computerChoice = "paper";
+        } else {
+            computerChoice = "scissors";
+        }
+
+        // Display computer choice
+        document.write("<p>Computer:" + " " + computerChoice + "</p>");
+
+        // Compare user choice vs computer choice
+        var compare = function(choice1,choice2) {
+            if (choice1 === choice2) {
+                return "It's a tie!";
+            }
+            if (choice1 === "rock") {
+                if (choice2 === "scissors") {
+                    // rock wins
+                    return "You win!";
+                } else {
+                    // paper wins
+                    return "You lose! Try again.";
+                }
+            }
+            if (choice1 === "paper") {
+                if (choice2 === "rock") {
+                    // paper wins
+                    return "You win!";
+                } else {
+                    // scissors wins
+                    return "You lose! Try again.";
+                }
+            }
+            if (choice1 === "scissors") {
+                if (choice2 === "rock") {
+                    // rock wins
+                    return "You lose! Try again.";
+                } else {
+                    // scissors wins
+                    return "You win!";
+                }
+            }
+        };
+
+        // Run the compare function
+        var results = compare(userChoice,computerChoice);
+
+        // Display results
+        document.write("<br><hr><br>" + results);
