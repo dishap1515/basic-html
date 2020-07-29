@@ -11,7 +11,8 @@ var zeroBtn = document.getElementById("calc-zero");
 
 var decimalBtn = document.getElementById("calc-decimal");
 var clearBtn = document.getElementById("calc-clear");
-var backspaceBtn = document.getElementById("calc-backspace");
+var plusminusBtn = document.getElementById("calc-plus-minus");
+var percentageBtn = document.getElementById("calc-percentage");
 var displayValElement = document.getElementById("calc-display-val");
 
 var displayVal = "0";
@@ -97,15 +98,16 @@ clearBtn.onclick = () => {
     pendingVal = undefined;
     evalStringArray = [];
     displayValElement.innerHTML = displayVal;
-
 }
-backspaceBtn.onclick = () => {
-    let lengthOfDisplayVal = displayVal.length;
-    displayVal = displayVal.slice(0, lengthOfDisplayVal - 1);
-
-    if(displayVal === "")
-        displayVal = "0";
-
+plusminusBtn.onclick = () => {
+   
+    if(!displayVal.includes('-'))
+        displayVal =  '-' + displayVal;
+    displayValElement.innerText = displayVal;
+}
+percentageBtn.onclick = () => {
+    pendingVal = displayVal;
+    displayVal = pendingVal * 0.01;
     displayValElement.innerText = displayVal;
 
 }
