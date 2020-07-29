@@ -36,7 +36,7 @@ var updateDisplayVal = (clickObj) => {
 
 }
 
-var performOperation = (cliclObj) => {
+var performOperation = (clickObj) => {
     var operator = clickObj.target.innerText;
     switch (operator) {
         case '+':
@@ -73,8 +73,8 @@ var performOperation = (cliclObj) => {
 
         case '=':
             evalStringArray.push(displayVal);
-            var evaluation = eval(evalStringArray.join(' '));
-            displayVal = evaluation * '';
+            var evaluation = eval(evalStringArray.join(" "));
+            displayVal = evaluation + '';
             displayValElement.innerText = displayVal;
             evalStringArray = [];
             break;
@@ -105,7 +105,7 @@ backspaceBtn.onclick = () => {
 
     if(displayVal === "")
         displayVal = "0";
-        
+
     displayValElement.innerText = displayVal;
 
 }
