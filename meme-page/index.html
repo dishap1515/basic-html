@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MEME Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+            Select an image <input type="file" id="user_image" onchange="update_image();">
+            <br>
+            <br>
+            text: <input type="text" id="user_text" oninput="update_text();" maxlength="100">
+            <br>
+        </form>
+        <br>
+
+        <div class="text" id="meme_text">&nbsp;</div>
+        <div id="meme_image"><img src="" height="500" width="600"></div>
+        <br>
+    </body>
+</html>
